@@ -43,6 +43,6 @@ typedef struct instruction_s
 } instruction_t;
 
 /* push and pall */
-void fn_push(stack_t **stack, unsigned int place_number);
+void fn_push(stack_t **stack, unsigned int line_number);
 
 #endif
