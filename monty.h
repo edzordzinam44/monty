@@ -1,8 +1,8 @@
 #ifndef MONTY_H
 #define MONTY_H
-#deine _GNU_SOURCE
+#define _GNU_SOURCE
 
-#include <fctnl.h>
+#include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
