@@ -31,7 +31,7 @@ void err(int error_code, ...)
 				va_arg(ag, char *));
 			break;
 		case 3:
-			l-num = va_arg(ag, int);
+			l_num = va_arg(ag, int);
 			op = va_arg(ag, char *);
 			fprintf(stderr, "L%d: unknown instruction %s\n", l_num, op);
 			break;
@@ -81,7 +81,7 @@ void more_err(int error_code, ...)
 			break;
 		case 9:
 			fprintf(stderr, "L%d: division by zero\n",
-				va-arg(ag, unsigned int));
+				va_arg(ag, unsigned int));
 			break;
 		default:
 			break;
@@ -110,7 +110,7 @@ void string_err(int error_code, ...)
 			fprintf(stderr, "L%d: can't pchar, value out of range\n", l_num);
 			break;
 		case 11:
-			fprinf(stderr, "L%d: can't pchar, stack empty\n", l_num);
+			fprintf(stderr, "L%d: can't pchar, stack empty\n", l_num);
 			break;
 		default:
 			break;

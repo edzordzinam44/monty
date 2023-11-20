@@ -57,7 +57,7 @@ int parse_line(char *buffer, int line_number, int format)
 	if (buffer == NULL)
 		err(4);
 
-	opcode = strtok(buffer,delim);
+	opcode = strtok(buffer, delim);
 	if (opcode == NULL)
 		return (format);
 	value = strtok(NULL, delim);
@@ -86,7 +86,7 @@ void find_func(char *opcode, char *value, int ln, int format)
 	int flag;
 
 	instruction_t func_list[] = {
-		{"push", add_to_stack},
+		{"push", add_stack},
 		{"pall", print_stack},
 		{"pint", print_top},
 		{"pop", pop_top},

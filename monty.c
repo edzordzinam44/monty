@@ -1,5 +1,4 @@
 #include "monty.h"
-stack_t *head = NULL;
 
 /**
  * main - Entry point for the program.
@@ -8,7 +7,7 @@ stack_t *head = NULL;
  * @argv: Array of pointers to command-line arguments.
  * Return: Always returns 0 to indicate successful execution.
  */
-int main(int argc, char *arggv[])
+int main(int argc, char *argv[])
 {
 	if (argc != 2)
 	{
@@ -16,7 +15,7 @@ int main(int argc, char *arggv[])
 		exit(EXIT_FAILURE);
 	}
 	open_file(argv[1]);
-	free_-nodes();
+	free_nodes();
 	return (0);
 }
 
@@ -24,7 +23,7 @@ int main(int argc, char *arggv[])
  * create_node - Creates a new node.
  *
  * @n: Number to be stored in the node.
- * Return: Pointer to the newly created node on success. Otherwise, returns NULL.
+ * Return: Pointer to a newly created node on success. Otherwise returns NULL
  *
  * Description: Allocates memory for a new node and stores the given number
  * inside it. Returns a pointer to the created node if successful; otherwise,
@@ -65,12 +64,12 @@ void free_nodes(void)
 }
 
 /**
- * add_to_queue - Adds a node to the queue.
+ * add_too_queue - Adds a node to the queue.
  * @new_node: Pointer to the new node.
  * @lne: line number of the opcode.
  */
 
-void add_too_queue(stack_t **new_node, _-attribute__((unused))unsigned int lne)
+void add_too_queue(stack_t **new_node, __attribute__((unused))unsigned int lne)
 {
 	stack_t *temp;
 

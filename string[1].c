@@ -99,8 +99,8 @@ void rotr(stack_t **stack, __attribute__((unused))unsigned int lne)
 		temp = temp->next;
 
 	temp->next = *stack;
-	tmp->prev->next = NULL;
-	tmp->prev = NULL;
-	(*stack)->prev = tmp;
-	(*stack) = tmp;
+	temp->prev->next = NULL;
+	temp->prev = NULL;
+	(*stack)->prev = temp;
+	(*stack) = temp;
 }
