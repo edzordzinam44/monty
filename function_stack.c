@@ -10,7 +10,7 @@
  * Takes a pointer to the new node and the current line number
  * of the opcode.
  */
-void add_stack(stack_t **new_node, __attitude__((unused))unsigned int ln)
+void add_stack(stack_t **new_node, __attribute__((unused))unsigned int ln)
 {
 	stack_t *temp;
 
@@ -37,7 +37,7 @@ void add_stack(stack_t **new_node, __attitude__((unused))unsigned int ln)
  * top node. The stack remains unchanged after this operation.
  */
 
-void print_stack(stack **stack, unsigned int line_number)
+void print_stack(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp;
 
@@ -88,5 +88,5 @@ void print_top(stack_t **stack, unsigned int line_number)
 {
 	if (stack == NULL || *stack == NULL)
 		more_err(6, line_number);
-	printf("%d\n", (*stack0->n);
+	printf("%d\n", (*stack)->n);
 }
